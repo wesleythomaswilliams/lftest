@@ -1,0 +1,45 @@
+/.build
+/.sass-cache
+/.npmrc
+/bin
+/node_modules
+/npm-debug.log
+/config/app-local*.json
+fingerprints*.json
+newrelic_agent.log
+/src/styles/analyze/_sprites.scss
+/src/styles/home/_sprites.scss
+.npmrc
+/__test__reports__
+package-lock.json
+yarn-error.log
+yarn-start.log
+yarn.lock
+
+# Gradle related directories/files
+/build
+/.gradle
+/subprojects/api/bin
+/subprojects/api/build
+/subprojects/api/.gradle
+/subprojects/test/bin
+/subprojects/test/build
+/subprojects/test/.gradle
+
+# Mac Folder view configuration files
+.DS_Store
+
+# code coverage reports
+/reports/coverage
+/reports/profile
+
+# iTestCloud
+/subprojetcs/test/src
+/subprojects/test/debug
+/subprojects/test/screenshots
+/subprojects/test/profiles
+
+# sonarqube generated files
+/.scannerwork
+/sonarqube/sonar-scanner-3.2.0.1227
+/sonarqube/sonar-scanner-cli-3.2.0.1227.zip
