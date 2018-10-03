@@ -1,0 +1,41 @@
+{
+  "name": "jest-filematch-issue",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "8.11.1"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jest": "23.1.0"
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "moduleNameMapper": {
+      "\\.s*css$": "identity-obj-proxy",
+      "\\.(?:png|jpg|svg$)": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "modulePathIgnorePatterns": [
+      "/.build/",
+      "/node_modules/",
+      "/.eslintrc.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "rootDir": "",
+    "testMatch": [
+      "<rootDir>/**/__tests__/**/*.js?(x)",
+      "<rootDir>/**/?(*-)(spec|test).js?(x)"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/fbjs",
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/core-js"
+    ],
+    "coverageDirectory": "reports/coverage"
+  }
+}
